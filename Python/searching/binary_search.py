@@ -35,7 +35,7 @@ def binary_search(numbers , target):
     high = len(numbers)-1    
 
     while (high >= low):
-        mid = int((high+low)/2)
+        mid = (high+low)//2
         if numbers[mid] == target:
             return mid
         elif numbers[mid] < target:
@@ -48,7 +48,7 @@ def rec_binary_search(numbers, target, low, high):
     if low > high:
         return False
     else:
-        mid = int((high+low)/2)
+        mid = (high+low)//2
         if numbers[mid] == target:
             return mid
         elif numbers[mid] < target:
